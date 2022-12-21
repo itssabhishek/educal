@@ -1,49 +1,46 @@
-import React, { Component } from 'react';
-import Hero from './HeroSection';
-import Category from './CategorySection';
-import Banner from './BannerSection';
-import Event from './EventSection';
-import Cta from './CtaSection';
-import PriceTab from '../Elements/Tab/PriceTab';
-import CourseTab from '../Elements/Tab/CourseTab';
+import React, { Component } from "react";
+import Hero from "./HeroSection";
+import Category from "./CategorySection";
+import Banner from "./BannerSection";
+import Event from "./EventSection";
+import Cta from "./CtaSection";
+import PriceTab from "../Elements/Tab/PriceTab";
+import CourseTab from "../Elements/Tab/CourseTab";
 
 class HomeMain extends Component {
+  render() {
+    return (
+      <main>
+        {/* hero-start */}
+        <Hero />
+        {/* hero-end */}
 
-    render() {
+        {/* category-start */}
+        <Category />
+        {/* category-end */}
 
-        return (
-            <main>
-	            {/* hero-start */}
-				<Hero />
-				{/* hero-end */}
+        {/* banner-start */}
+        <Banner />
+        {/* banner-end */}
 
-				{/* category-start */}
-				<Category />
-				{/* category-end */}
+        {/* course-start */}
+        <CourseTab />
+        {/* course-end */}
 
-				{/* banner-start */}
-				<Banner />
-				{/* banner-end */}
+        {/* event-start */}
+        <Event />
+        {/* event-end */}
 
-				{/* course-start */}
-				<CourseTab />
-				{/* course-end */}
+        {/* tab-start */}
+        <PriceTab />
+        {/* tab-end */}
 
-				{/* event-start */}
-				<Event />
-				{/* event-end */}
-
-				{/* tab-start */}
-				<PriceTab />
-				{/* tab-end */}
-				
-				{/* cta-start */}
-				<Cta />
-				{/* cta-end */}
-
-        	</main>
-        );
-    }
+        {/* cta-start */}
+        <Cta />
+        {/* cta-end */}
+      </main>
+    );
+  }
 }
 
 export default HomeMain;
